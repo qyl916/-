@@ -58,7 +58,9 @@ void LCD_Init(LCD_Byte mode){
 	__display = __LCD_DISPLAY;
 	rs = 1, rw = 1, en = 1;
 	P0 = 0xFF;
-	delay(600);
+	delay(200);
+	delay(200);
+	delay(200);
 	__WRITE_INS(mode);
 	delay(200);
 	__WRITE_INS(mode);
