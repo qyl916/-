@@ -8,7 +8,7 @@
 #define __BEEPER_H__
 
 #ifdef __cplusplus
-//extern "C"{
+extern "C"{
 #endif
 
   /*************************************************************************/
@@ -57,7 +57,7 @@ void BEEPER_Start(void);
 void BEEPER_Stop(void);
 
 #ifdef __cplusplus
-//}
+}
 #endif
 
 #endif
