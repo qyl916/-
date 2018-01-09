@@ -8,13 +8,13 @@ sbit sel = P1 ^ 5;
 
 void BEEPER_Set_Tune(signed char tune){
 	en = 1, mode = 0, sel = 0;
-	P0 = tune + 48;
+	P2 = tune + 48;
 	en = 0;
 }
 
 void BEEPER_Set_Length(unsigned char length){
 	en = 1, mode = 0, sel = 1;
-	P0 = length;
+	P2 = length;
 	en = 0;
 }
 
